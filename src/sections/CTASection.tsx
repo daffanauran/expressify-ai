@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
+import { trackPixelEvent } from '../lib/pixel';
 
 const benefitItems = ['Free 30-min demo', 'Live setup walkthrough', 'No commitment required'];
 
@@ -56,7 +57,7 @@ export const CTASection = () => {
         </ul>
 
         <div className={`flex flex-col items-center gap-4 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
-          <a href="https://calendly.com/lauri-expressify/book" target="_blank" rel="noopener noreferrer">
+          <a href="https://calendly.com/lauri-expressify/book" target="_blank" rel="noopener noreferrer" onClick={() => trackPixelEvent('Lead')}>
             <Button
               type="button"
               className="h-14 w-full max-w-[280px] rounded-2xl bg-[#945ff9] px-6 text-lg font-bold leading-7 tracking-[-0.44px] text-[#fcfcfc] shadow-[0px_25px_50px_-12px_#945ff966] hover:bg-[#945ff9]/90 hover:scale-105 hover:shadow-[0px_30px_60px_-12px_#945ff980] transition-all duration-300"

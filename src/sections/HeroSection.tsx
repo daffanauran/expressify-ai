@@ -4,6 +4,7 @@ import { Avatar, AvatarFallback } from '../components/ui/avatar';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import { trackPixelEvent } from '../lib/pixel';
 
 const businessUsers = [
   { id: 'A', className: 'bg-violet-600' },
@@ -174,7 +175,7 @@ export const HeroSection = () => {
             </div>
 
             <div className="flex w-full max-w-[528px] flex-wrap items-start gap-4 pt-8 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-              <a href="https://calendly.com/lauri-expressify/book" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/lauri-expressify/book" target="_blank" rel="noopener noreferrer" onClick={() => trackPixelEvent('Lead')}>
                 <Button className="h-12 rounded-[10px] bg-[#945ff9] px-5 shadow-[0px_8px_10px_-6px_#945ff94c,0px_20px_25px_-5px_#945ff94c] hover:bg-[#945ff9]/90 hover:scale-105 hover:shadow-[0px_12px_20px_-6px_#945ff96c,0px_30px_40px_-5px_#945ff96c] transition-all duration-300">
                   <span className="text-base font-semibold leading-6 tracking-[-0.31px] text-[#fcfcfc]">
                     Book Your Free Demo
