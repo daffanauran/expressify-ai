@@ -183,16 +183,6 @@ export const HeroSection = () => {
                   <ArrowRight className="h-4 w-4 text-[#fcfcfc] group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
-              <a href="#product-demo">
-                <Button
-                  variant="outline"
-                  className="h-12 rounded-[10px] border-[#ffffff1f] bg-[#020204] px-6 shadow-[0px_1px_2px_#0000000d] hover:bg-[#111111] hover:scale-105 hover:border-[#945ff933] transition-all duration-300"
-                >
-                  <span className="text-sm font-medium leading-5 tracking-[-0.15px] text-neutral-100">
-                    Watch Demo
-                  </span>
-                </Button>
-              </a>
             </div>
 
             <div className="flex w-full flex-col items-start pt-8 animate-fade-in-up" style={{ animationDelay: '450ms' }}>
