@@ -1,7 +1,6 @@
 import { HeroSection } from './sections/HeroSection';
 import { MissedOpportunitySection } from './sections/MissedOpportunitySection';
 import { HowItWorksSection } from './sections/HowItWorksSection';
-import { ProductDemoSection } from './sections/ProductDemoSection';
 import { ServiceCapabilitiesSection } from './sections/ServiceCapabilitiesSection';
 import { TestimonialsSection } from './sections/TestimonialsSection';
 import { FAQSection } from './sections/FAQSection';
@@ -14,7 +13,6 @@ function App() {
       <HeroSection />
       <MissedOpportunitySection />
       <HowItWorksSection />
-      <ProductDemoSection />
       <ServiceCapabilitiesSection />
       <TestimonialsSection />
       <FAQSection />
